@@ -95,7 +95,7 @@ footer {
 }
 
 .social-network-icons>li{
-    display:block!important;
+    display:inline-block!important;
 }
 .jumbotron.work-experience{
     box-shadow: 0 0px 0px 0px gray;
