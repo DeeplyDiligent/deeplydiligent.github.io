@@ -234,40 +234,41 @@
                     <p style="word-wrap: break-word; margin-left:20px">
                         Email: &ensp;<a href="mailto:bhattacharyya.deep@gmail.com">bhattacharyya.deep@gmail.com</a><br>Mobile:&ensp;0434100056
                     </p><br><br>
-                    <form id="contact-form" method="post" action="contact.php" role="form">
-                        <div class="messages"></div>
-                        <div class="container-fluid" style="padding-left:0px;padding-right:15px">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Name*</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Email*</label>
-                                        <input id="form_lastname" type="text" name="email" class="form-control" required="required" data-error="Email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please, leave me a message." style="padding:10px"></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12" style="padding-left:9px">
-                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                                </div>
-                            </div>
-                        </div>
+                    <script>
+                      window.fbAsyncInit = function() {
+                        FB.init({
+                          appId      : '95100348886',
+                          xfbml      : true,
+                          version    : 'v2.6'
+                        });
+                      };
 
-                    </form>
+                      (function(d, s, id){
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) {return;}
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/sdk.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                      }(document, 'script', 'facebook-jssdk'));
+
+                    </script>
+
+                        <div class="fb-page" 
+                         data-href="https://www.facebook.com/digital.inspiration/" 
+                         data-tabs="messages" 
+                         data-width="400" 
+                         data-height="400" 
+                         data-small-header="true" 
+                         data-adapt-container-width="false" 
+                         data-hide-cover="true" 
+                         data-show-facepile="false">
+                      <div class="fb-xfbml-parse-ignore">
+                        <blockquote>
+                          <a href="https://m.me/digital.inspiration/">Message Us</a>
+                        </blockquote>
+                      </div>
+                    </div>
+
                 </div>
             </div>
             <footer>
