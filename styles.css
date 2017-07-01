@@ -10,7 +10,7 @@
         width: 100%; 
     }
 .main {
-    margin-top: 52px;
+    margin-top: 50px;
 }
     
 
@@ -152,4 +152,9 @@ footer {
         float:none;
     }
 }
-
+a.anchor {
+    display: block;
+    position: relative;
+    top: -48px;
+    visibility: hidden;
+}

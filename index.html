@@ -15,36 +15,10 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/css/mdb.min.css" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="fbmessage.js"></script>
+        <script src="animate.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="styles.css">
-        <script>
-            $(document).ready(function(){
-              // Add smooth scrolling to all links
-              $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
-
-                  // Store hash
-                  var hash = this.hash;
-
-                  // Using jQuery's animate() method to add smooth page scroll
-                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top -52
-                  }, 800, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
-                } // End if
-              });
-            });
-        </script>
 	</head>
 	<body>
 		<nav class="navbar navbar-inverse">
@@ -77,13 +51,15 @@
 			</div>
 		</nav>
 		<div class="main">
-			<div class="jumbotron quote" id="top">
+            <a class="anchor" id="top"></a>
+			<div class="jumbotron quote">
 				<div class="container text-center">
 					<h1>"It does not matter how slowly you go as long as you do not stop."</h1>
 					<p>- Confucius</p>
 				</div>
 			</div>
-			<div class="jumbotron profile" id="profile">
+            <a class="anchor" id="profile"></a>
+			<div class="jumbotron profile">
 				<div class="w3-container">
 					<div class="w3-card-4" style="margin:auto;max-width:500px">
 						<header class="w3-container w3-light-grey">
@@ -110,7 +86,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="jumbotron projects" id="projects">
+            <a class="anchor" id="projects"></a>
+			<div class="jumbotron projects">
 				<div class="projects-showcase">
 					<h1 class="recent-headings-title">Recent Projects</h1>
 					<br><br>
@@ -170,7 +147,8 @@
 					</div>
 				</div>
 			</div>
-            <div class="jumbotron work-experience" id="work-experience">
+            <a class="anchor" id="work-experience"></a>
+            <div class="jumbotron work-experience">
                 <div class="work-experience-showcase">
                     <h1 style="display:inline-block">Work Experience</h1><br><br><br><br>
                     <div class="col-xl-12">
@@ -226,7 +204,8 @@
                     </div>
                 </div>
             </div>
-            <div class="jumbotron contact" id="contact">
+            <a class="anchor" id="contact"></a>
+            <div class="jumbotron contact">
                 <div class="contact-showcase">
                     <h1 style="display:inline-block">Contact</h1>
                     <br><br>
