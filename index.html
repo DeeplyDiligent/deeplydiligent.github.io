@@ -64,9 +64,7 @@
 						<li><a href="#profile">About Me</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#work-experience">Work Experience</a></li>
-<!--
-						<li><a href="#">Contact</a></li>
--->
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right social-network-icons">
 						<li><a href="https://www.linkedin.com/in/deep-bhattacharyya-56494bb5/"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
@@ -191,7 +189,7 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Learnmate - Tutoring VCE Physics (March 2017 to Present)</h4>
-                                <p>I have been delivering VCE Physics tuition lessons since March after receiving a study score of 47/50 for the subject. This experience taught me </p>
+                                <p>I have been delivering VCE Physics tuition lessons since March after receiving a study score of 47/50 for VCE Physics. This experience taught me to simplify concepts so students who didn't have the same background as me could understand. Furthermore, it also built my ability to run my own business as an independent contractor and selling myself to clients.</p>
                             </div>
                         </div>
                         <hr>
@@ -201,7 +199,7 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">MSA Volunteer Work Experience - Breakfast Club (Feb 2017 to present)</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cupiditate temporibus iure soluta. Quasi mollitia maxime nemo quam accusamus possimus, voluptatum expedita assumenda. Earum sit id ullam eum vel delectus!</p>
+                                <p>As a team member at the MSA Breakfast Club, I worked as a team with about 7-8 other volunteers to serve over 200 students every morning. I was responsible for entering and organising student data such as name and student ID numbers in an efficient and accurate way.</p>
                             </div>
                         </div>
                         <hr>
@@ -231,11 +229,48 @@
                 <div class="contact-showcase">
                     <h1 style="display:inline-block">Contact</h1>
                     <br><br>
-                    <p style="font-family: 'Courier New', Courier, monospace">if (programmer.cannotBeReachedBy(smokeSignals)){<br>&emsp;pleaseFillForm();<br>}</p><br>
+                    <p style="font-family: 'Courier New', Courier, monospace; word-wrap: break-word;">if (programmer.cannotBeReachedBy(smokeSignals)){<br>&emsp;pleaseFillForm();<br>}</p><br>
                     <p>Thanks for taking the time to visit my website. If you have any questions or comments, feel free to fill out the form below or contact me directly at:</p>
-                    <p>
-                        &emsp;Email: &ensp;<a href="mailto:bhattacharyya.deep@gmail.com">bhattacharyya.deep@gmail.com</a><br>&emsp;Mobile:&ensp;0434100056
-                    </p>
+                    <p style="word-wrap: break-word; margin-left:20px">
+                        Email: &ensp;<a href="mailto:bhattacharyya.deep@gmail.com">bhattacharyya.deep@gmail.com</a><br>Mobile:&ensp;0434100056
+                    </p><br><br>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="container-fluid" style="padding-left:0px;padding-right:15px">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Name*</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Email*</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please,leave us a message." style="padding:10px"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="padding-left:9px">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
             </div>
             <footer>

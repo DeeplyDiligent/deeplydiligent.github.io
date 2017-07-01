@@ -114,6 +114,7 @@ footer {
 .media-body>p{
     padding-top: 5px;
     font-family:"Flamenco";
+    word-wrap: break-word;
 }
 .jumbotron.contact{
     margin-bottom: 0px;
@@ -127,4 +128,7 @@ footer {
 }
 .contact-showcase>p{
     font-family: Flamenco;
+}
+.form-control{
+    padding:0px;
 }
