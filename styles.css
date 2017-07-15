@@ -1,146 +1,164 @@
-.jumbotron{
+.jumbotron {
     border-radius: 0px;
 }
+
 .navbar {
-        position: relative;
-        margin-bottom: 0;
-        border-radius: 0;
-        position: fixed; 
-        top: 0; 
-        width: 100%; 
-    }
+    position: relative;
+    margin-bottom: 0;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main {
     margin-top: 50px;
 }
-    
 
 footer {
-  background-color: #f2f2f2;
-  padding: 25px;
-}      
+    background-color: #f2f2f2;
+    padding: 25px;
+}
 
-.navbar{
+.navbar {
     background-color: #002060;
-    z-index: 500 
+    z-index: 500
 }
-.deeply-diligent-logo{
+
+.deeply-diligent-logo {
     height: inherit;
-    padding: 10px;   
+    padding: 10px;
 }
-.navbar-brand{
-    padding:0px;
+
+.navbar-brand {
+    padding: 0px;
 }
-.jumbotron.quote{
+
+.jumbotron.quote {
     box-shadow: 0 5px 15px 0px gray;
     margin-bottom: 20px;
     font-family: 'Roboto';
     color: white;
     text-shadow: 4px 4px 4px #000000;
-    height:auto;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.1), 
-      rgba(0, 0, 0, 0.5)
-    ),url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg') center 30% no-repeat;   
+    height: auto;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url('https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg') center 30% no-repeat;
     background-size: cover;
     background-blend-mode: darken;
 }
-.container{
+
+.container {
     padding: 5% 5%;
 }
-.jumbotron.profile{
+
+.jumbotron.profile {
     box-shadow: 0 0px 0px 0px gray;
 }
-.summary.container-fluid{
+
+.summary.container-fluid {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.card-title{
-    margin-top:10px;
+
+.card-title {
+    margin-top: 10px;
     margin-bottom: 10px;
-    
 }
-.profile-text{
+
+.profile-text {
     font-family: 'Flamenco';
     font-size: 20px!important;
 }
 
-.face-image{
-    width:60px;
+.face-image {
+    width: 60px;
     margin-right: 5%;
     margin-bottom: 0px;
-    margin-top:auto;
+    margin-top: auto;
 }
 
-.jumbotron.projects{
+.jumbotron.projects {
     box-shadow: 0 0px 10px 0px gray;
     background-color: cadetblue;
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
-.projects-showcase{
+
+.projects-showcase {
     max-width: 1000px;
     overflow: auto;
-    margin:auto;
+    margin: auto;
 }
-.projects.w3-container{
+
+.projects.w3-container {
     background-color: white;
     padding-top: 10px;
     font-family: 'Flamenco';
 }
-.projects-card.w3-container{
-    margin:5px;
-    padding:5px;
+
+.projects-card.w3-container {
+    margin: 5px;
+    padding: 5px;
 }
-.recent-headings-title{
-    display: inline-block; 
+
+.recent-headings-title {
+    display: inline-block;
     color: white!important;
     text-shadow: 2px 2px 4px #000000;
 }
-.social-network-icons{
-    font-size:18px;
+
+.social-network-icons {
+    font-size: 18px;
 }
 
-.social-network-icons>li{
-    display:inline-block!important;
+.social-network-icons>li {
+    display: inline-block!important;
 }
 
-.jumbotron.work-experience{
+.jumbotron.work-experience {
     box-shadow: 0 0px 0px 0px gray;
 }
-.work-experience-showcase{
+
+.work-experience-showcase {
     max-width: 1000px;
     overflow: auto;
-    margin:auto;
+    margin: auto;
 }
-.work-exp-img-crop{
-    padding:5px;
-    width:100px
+
+.work-exp-img-crop {
+    padding: 5px;
+    width: 100px
 }
-.work-exp-pics-pos{
-    padding-left:7.5px !important;
-    padding-top:5px!important;
+
+.work-exp-pics-pos {
+    padding-left: 7.5px !important;
+    padding-top: 5px!important;
     padding-bottom: 15px!important;
     padding-right: 30px!important;
 }
-.media-body>p{
+
+.media-body>p {
     padding-top: 5px;
-    font-family:"Flamenco";
+    font-family: "Flamenco";
     word-wrap: break-word;
 }
-.jumbotron.contact{
+
+.jumbotron.contact {
     margin-bottom: 0px;
     box-shadow: 0 0px 10px 0px gray;
-    background-color:#f2f2f2;
+    background-color: #f2f2f2;
 }
-.contact-showcase{
+
+.contact-showcase {
     max-width: 1000px!important;
     overflow: auto;
-    margin:auto;
+    margin: auto;
 }
-.contact-showcase>p{
+
+.contact-showcase>p {
     font-family: Flamenco;
 }
-.form-control{
-    padding:0px;
+
+.form-control {
+    padding: 0px;
 }
 
 @media (min-width: 768px) and (max-width: 900px) {
@@ -150,13 +168,15 @@ footer {
     .navbar-collapse.collapse.in {
         display: block !important;
     }
-    .navbar-header .collapse, .navbar-toggle {
-        display:block !important;
+    .navbar-header .collapse,
+    .navbar-toggle {
+        display: block !important;
     }
     .navbar-header {
-        float:none;
+        float: none;
     }
 }
+
 a.anchor {
     display: block;
     position: relative;
