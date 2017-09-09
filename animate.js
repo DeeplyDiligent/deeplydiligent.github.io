@@ -32,6 +32,7 @@ $(document).ready(function(){
       }
         else{
             $(loc).html(text);
+            return true;
         }
     }
 
@@ -40,8 +41,8 @@ $(document).ready(function(){
     var text2 = "- Seneca"
 
 
-    typeWriter(text, 0,".twr"); 
+    var a = typeWriter(text, 0,".twr"); 
     setTimeout(function() {
         typeWriter(text2, 0,".tw2")
-        }, 4340 ); 
+        }, 5200 ); 
 });
