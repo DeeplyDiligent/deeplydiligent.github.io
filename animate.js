@@ -35,7 +35,7 @@ $(document).ready(function(){
         n++;
         setTimeout(function() {
           typeWriter(text, n,loc)
-        }, 70);
+        }, 50);
       }
         else{
             $(loc).html(text);
@@ -45,7 +45,7 @@ $(document).ready(function(){
     
 
 
-
+//    $(".jumbotron.quote").css("transition","all .5s linear");
     $(function(){
     var bgimage = new Image(); bgimage.src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg/1280px-Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg";
         $(bgimage).on('load', function(){
@@ -62,14 +62,20 @@ $(document).ready(function(){
             var text = '"Throw me into the wolves and I will return leading the pack."';
             var text2 = "- Seneca"
 
-            $(".jumbotron.quote").slideDown(2000); 
-             
+            $(".jumbotron.quote").slideDown(1500); 
+//            $(".jumbotron.quote").show();
+//            $(".jumbotron.quote").css("height","0px");
+//            $(".jumbotron.quote").css("height","auto");
+  
+            
+            
             setTimeout(function() {
+                $(".jumbotron.quote").css("transition","all .5s linear");
                 typeWriter(text, 0,".twr");
                 setTimeout(function() {
                     typeWriter(text2, 0,".tw2")
-                }, 7000 );
-                }, 2000 ); 
+                }, 5000 );
+                }, 1500 ); 
             });
     });
 });
