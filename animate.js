@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    function getRows(selector) {
+        var height = $(selector).height();
+        var line_height = $(selector).css('line-height');
+        line_height = parseFloat(line_height)
+        var rows = height / line_height;
+        return Math.round(rows);
+    }
   // Add smooth scrolling to all links
     $("a").on('click', function(event) {
 
@@ -35,14 +42,34 @@ $(document).ready(function(){
             return true;
         }
     }
+    
 
 
-    var text = '"Throw me into the wolves and I will return leading the pack."';
-    var text2 = "- Seneca"
 
+    $(function(){
+    var bgimage = new Image(); bgimage.src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg/1280px-Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg";
+        $(bgimage).on('load', function(){
+            
+            var text = '"Throw me into the wolves and I will return leading the pack."';
+            var text2 = "- Seneca"
 
-    var a = typeWriter(text, 0,".twr"); 
-    setTimeout(function() {
-        typeWriter(text2, 0,".tw2")
-        }, 5200 ); 
+            $(".twr").html(text);
+            var countlines = getRows(".twr")
+            $(".tw2").html(text2);
+            var countlines2 = getRows(".twr")
+            $(".twr").html('<br>');
+            $(".tw2").html('<br>');
+            var text = '"Throw me into the wolves and I will return leading the pack."';
+            var text2 = "- Seneca"
+
+            $(".jumbotron.quote").slideDown(2000); 
+             
+            setTimeout(function() {
+                typeWriter(text, 0,".twr");
+                setTimeout(function() {
+                    typeWriter(text2, 0,".tw2")
+                }, 7000 );
+                }, 2000 ); 
+            });
+    });
 });
