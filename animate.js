@@ -65,7 +65,7 @@ $(document).ready(function(){
             $(".jumbotron.quote").slideDown(1500); 
 //            $(".jumbotron.quote").show();
 //            $(".jumbotron.quote").css("height","0px");
-//            $(".jumbotron.quote").css("height","auto");
+//            $(".jumbotron.quote").animate({height: "500px"});
   
             
             
