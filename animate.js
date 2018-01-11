@@ -53,10 +53,10 @@ $(document).ready(function(){
             var text = '"Throw me into the wolves and I will return leading the pack."';
             var text2 = "- Seneca"
 
-            $(".twr").html(text);
-            var countlines = getRows(".twr")
-            $(".tw2").html(text2);
-            var countlines2 = getRows(".twr")
+            // $(".twr").html(text);
+            // var countlines = getRows(".twr")
+            // $(".tw2").html(text2);
+            // var countlines2 = getRows(".twr")
             $(".twr").html('<br>');
             $(".tw2").html('<br>');
             var text = '"Throw me into the wolves and I will return leading the pack."';
@@ -70,7 +70,7 @@ $(document).ready(function(){
             
             
             setTimeout(function() {
-                $(".jumbotron.quote").css("transition","all .5s linear");
+                // $(".jumbotron.quote").css("transition","all .5s linear");
                 typeWriter(text, 0,".twr");
                 setTimeout(function() {
                     typeWriter(text2, 0,".tw2")
@@ -78,4 +78,40 @@ $(document).ready(function(){
                 }, 1500 ); 
             });
     });
+
+
+    var controller = new ScrollMagic.Controller();
+
+// create a scene
+    // Create Animation for 0.5s
+    var tween =  TweenMax.staggerFrom('.recent-shapes', 1, { y:"-50%", ease:Power1.easeInOut, opacity: 0 ,repeat:0, scale: 1 },0.3);
+    var scene = new ScrollMagic.Scene({
+        duration: 1000,    // the scene should last for a scroll distance of 100px
+        triggerElement: '#recent-projects-jumbotron', // starting scene, when reaching this element
+    }).setPin("#recent-projects-jumbotron") // pins the element for the the scene's duration
+        .setTween(tween)
+        .addTo(controller); // assign the scene to the controller
+    var triggerHook = scene.triggerHook();
+
+// set a new triggerHook using a string
+
+    scene.triggerHook($(".navbar").height()/$(window).height());
+
+
+    var controller = new ScrollMagic.Controller();
+// create a scene
+    // Create Animation for 0.5s
+    var tween =  TweenMax.staggerFrom('.work-e-shapes', 1, { ease:Power1.easeInOut, opacity: 0 ,repeat:0, scale: 0 },0.3);
+    var scene = new ScrollMagic.Scene({
+        duration: 1000,    // the scene should last for a scroll distance of 100px
+        triggerElement: '#work-e-jumbotron', // starting scene, when reaching this element
+    }).setPin("#work-e-jumbotron") // pins the element for the the scene's duration
+        .setTween(tween)
+        .addTo(controller); // assign the scene to the controller
+    var triggerHook = scene.triggerHook();
+
+// set a new triggerHook using a string
+
+    scene.triggerHook($(".navbar").height()/$(window).height());
+
 });
