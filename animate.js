@@ -97,8 +97,8 @@ $(document).ready(function () {
             duration: $('#profile-card').outerHeight(),    // the scene should last for a scroll distance of 100px
             triggerElement: '#profile-card', // starting scene, when reaching this element
             triggerHook: "onLeave",
+            delay:300
         })
-            .addIndicators()
             .setTween(tween)
             .addTo(controller); // assign the scene to the controller
         var triggerHook = scene.triggerHook();
@@ -122,7 +122,6 @@ $(document).ready(function () {
             triggerElement: '#recent-projects-jumbotron', // starting scene, when reaching this element
             triggerHook: "onLeave",
         })  .setTween(tween)
-            .addIndicators()
             .addTo(controller); // assign the scene to the controller
         var triggerHook = scene.triggerHook();
 
