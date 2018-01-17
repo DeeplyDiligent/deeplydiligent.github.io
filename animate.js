@@ -78,7 +78,7 @@ $(document).ready(function () {
             }, 1500);
         });
     });
-
+    //TODO: ANCHORS ARE GOING TO BLANK SCREEN
     var isMobile = window.matchMedia("(max-width: 760px)");
 
     if (!isMobile.matches) {
@@ -94,9 +94,11 @@ $(document).ready(function () {
             scale: 1
         }, 0.3);
         var scene = new ScrollMagic.Scene({
-            duration: 1000,    // the scene should last for a scroll distance of 100px
-            triggerElement: '#recent-projects-jumbotron', // starting scene, when reaching this element
-        }).setPin("#recent-projects-jumbotron") // pins the element for the the scene's duration
+            duration: $('#profile-card').outerHeight(),    // the scene should last for a scroll distance of 100px
+            triggerElement: '#profile-card', // starting scene, when reaching this element
+            triggerHook: "onLeave",
+        })
+            .addIndicators()
             .setTween(tween)
             .addTo(controller); // assign the scene to the controller
         var triggerHook = scene.triggerHook();
@@ -116,10 +118,11 @@ $(document).ready(function () {
             scale: 0
         }, 0.3);
         var scene = new ScrollMagic.Scene({
-            duration: 1000,    // the scene should last for a scroll distance of 100px
-            triggerElement: '#work-e-jumbotron', // starting scene, when reaching this element
-        }).setPin("#work-e-jumbotron") // pins the element for the the scene's duration
-            .setTween(tween)
+            duration: $('#recent-projects-jumbotron').outerHeight(),    // the scene should last for a scroll distance of 100px
+            triggerElement: '#recent-projects-jumbotron', // starting scene, when reaching this element
+            triggerHook: "onLeave",
+        })  .setTween(tween)
+            .addIndicators()
             .addTo(controller); // assign the scene to the controller
         var triggerHook = scene.triggerHook();
 
@@ -128,5 +131,6 @@ $(document).ready(function () {
         scene.triggerHook($(".navbar").height() / $(window).height());
     }
 
+    
 
 });
