@@ -185,3 +185,32 @@ a.anchor {
     visibility: hidden;
 }
 
+
+.highlight-app {
+    background-color: white!important;
+    max-width: 700px;
+    margin:auto;    
+}
+
+.highlight-app .card-image{
+  width:130px;
+  margin:auto;
+
+}
+
+.row {
+    
+}
+
+.highlight-app .card-text {
+    font-family:"Flamenco";
+}
+
+
+
+
+
+.card-block {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
