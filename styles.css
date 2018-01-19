@@ -214,3 +214,8 @@ a.anchor {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+.highlight-app img {
+    height:100px;
+    margin-top:10px;
+}
