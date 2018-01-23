@@ -94,12 +94,12 @@ $(document).ready(function () {
             scale: 1
         }, 0.3);
         var scene = new ScrollMagic.Scene({
-            duration: $('#profile-card').outerHeight(),    // the scene should last for a scroll distance of 100px
+            duration: $('#profile-card').outerHeight()/2,    // the scene should last for a scroll distance of 100px
             triggerElement: '#profile-card', // starting scene, when reaching this element
-            triggerHook: "onLeave",
-            delay:300
-        })
+            triggerHook: "onEnter",
+        })  .offset($('#profile-card').outerHeight()/2)
             .setTween(tween)
+//            .addIndicators()
             .addTo(controller); // assign the scene to the controller
         var triggerHook = scene.triggerHook();
 
@@ -118,10 +118,13 @@ $(document).ready(function () {
             scale: 0
         }, 0.3);
         var scene = new ScrollMagic.Scene({
-            duration: $('#recent-projects-jumbotron').outerHeight(),    // the scene should last for a scroll distance of 100px
+            duration: $('#recent-projects-jumbotron').outerHeight()/2,    // the scene should last for a scroll distance of 100px
             triggerElement: '#recent-projects-jumbotron', // starting scene, when reaching this element
-            triggerHook: "onLeave",
-        })  .setTween(tween)
+            triggerHook: "onEnter",
+        })  
+            .offset($('#recent-projects-jumbotron').outerHeight()/2)
+            .setTween(tween)
+//            .addIndicators()
             .addTo(controller); // assign the scene to the controller
         var triggerHook = scene.triggerHook();
 
