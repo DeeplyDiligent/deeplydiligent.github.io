@@ -219,3 +219,7 @@ a.anchor {
     height:100px;
     margin-top:10px;
 }
+
+.modal-body img {
+    width:100%;
+}
