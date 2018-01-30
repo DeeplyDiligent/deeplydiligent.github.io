@@ -223,3 +223,8 @@ a.anchor {
 .modal-body img {
     width:100%;
 }
+
+.jumbotron.profile .certificate a {
+    margin: auto;
+    margin-top:2rem;
+}
