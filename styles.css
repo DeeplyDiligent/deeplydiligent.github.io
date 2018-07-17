@@ -230,7 +230,10 @@ a.anchor {
     width:100%;
 }
 
-.jumbotron.profile .certificate a {
-    margin: auto;
-    margin-top:2rem;
+.jumbotron.profile .certificate img {
+    padding: 10px;
+}
+
+.play-store-sticker-1 {
+    padding:5px;
 }
