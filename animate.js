@@ -112,13 +112,14 @@ $(document).ready(function () {
 // create a scene
         // Create Animation for 0.5s
         var tween = TweenMax.staggerFrom('.work-e-shapes', 1, {
+            y: "-50%",
             ease: Power1.easeInOut,
             opacity: 0,
             repeat: 0,
-            scale: 0
+            scale: 0.5
         }, 0.3);
         var scene = new ScrollMagic.Scene({
-            duration: $('#recent-projects-jumbotron').outerHeight()/2,    // the scene should last for a scroll distance of 100px
+            duration: $('#recent-projects-jumbotron').outerHeight()/1,    // the scene should last for a scroll distance of 100px
             triggerElement: '#recent-projects-jumbotron', // starting scene, when reaching this element
             triggerHook: "onEnter",
         })  
